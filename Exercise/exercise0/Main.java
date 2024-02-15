@@ -27,6 +27,8 @@ public class Main {
         FireSafetySys smoke_detector = new FireSafetySys("living room", "OFF", "battery", "Smoke detector");
         FireSafetySys fire_alarm = new FireSafetySys("lobby","ON","battery","Alarm");
         IOTSystems smart_lights = new IOTSystems("smart lights", "bedroom", (byte)4, "amber");
+        IOTSystems led_strips = new IOTSystems("LED light strips", "living room", (byte)1, "green");
+        IOTSystems spot_light = new IOTSystems("Spot Lights", "living room", (byte)2, "blue");
         IOTSystems temperature_sensor = new IOTSystems("Thermostat", "living room", 'c');
         IOTSystems.Thermostat_System room_temperature = temperature_sensor.new Thermostat_System();
         IOTSystems.Network_system network = new IOTSystems.Network_system();

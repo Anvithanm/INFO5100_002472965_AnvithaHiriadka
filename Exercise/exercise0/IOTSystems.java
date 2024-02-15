@@ -11,7 +11,7 @@ public class IOTSystems{
         location_name = location;
         light_color = color;
         number_of_lights = lights_count;
-        System.out.println("The Smart Light system is Active");
+        System.out.println("The "+device_name+" are set to "+ light_color);
     }
     //Using constructor overloading for temperature sensor object
     public IOTSystems(String device, String location, char unit){

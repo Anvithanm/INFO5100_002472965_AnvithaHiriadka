@@ -29,7 +29,7 @@ public class SprinklerSystems {
     public void set_power_on_off(){
         System.out.println("The Power and water system is powered: "+power_on_off);
     }
-    public void activate_system(){
+    public void activate_system() {
         System.out.println("The Sprinkler system status: "+Activation_status);
     }
     public void adjust_sprinkler(){
