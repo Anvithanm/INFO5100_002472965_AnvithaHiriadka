@@ -4,6 +4,7 @@ Session Class
 This class contains :
 - A public method to calculate average quiz scores per student for the whole class
 - A public method to print the list of quiz scores in ascending order for one session
+- A public method to print the list of quiz scores in ascending order for each student
 */
 import java.util.*;
 public class Session {
