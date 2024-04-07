@@ -1,0 +1,21 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<Bookshelf>
+    <Book>
+        <Title>A Brief History of Time</Title>
+        <Published_year>1988</Published_year>
+        <NumberofPages>256</NumberofPages>
+        <Author>Stephen Hawking</Author>
+    </Book>
+    <Book>
+        <Title>The Allure of the Multiverse</Title>
+        <Published_year>2024</Published_year>
+        <NumberofPages>320</NumberofPages>
+        <Author>Paul Halpern</Author>
+    </Book>
+    <Book>
+        <Title>The Color of Dragons</Title>
+        <Published_year>2015</Published_year>
+        <NumberofPages>320</NumberofPages>
+        <Author>R.A. Salvatore, Erika Lewis</Author>
+    </Book>
+</Bookshelf>
