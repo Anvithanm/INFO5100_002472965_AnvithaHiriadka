@@ -22,7 +22,6 @@ To run the demo, follow these steps:
 - Encrypt_message.java has function for encryption of message for both the cases Symmetric and Asymmetric.
 - Decrypt_message.java has function for decryption of message for both the cases Symmetric and Asymmetric.
 
-## Output Sample
 ## Dependencies
 This project requires Java 8
 
