@@ -46,9 +46,6 @@ This project requires Java 8 and JavaFX for GUI.
 ## Application view
 ![Calculator Screenshot](Screenshot.png)
 
-## Application Demo
-![Calculator Application Demo](Screen Recording.mov)
-
 ## Credits
 - Author: Anvitha Hiriadka
 - Created on: 04/26/2024
