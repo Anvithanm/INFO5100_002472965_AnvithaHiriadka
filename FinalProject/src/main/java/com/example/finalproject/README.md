@@ -9,7 +9,6 @@ The user can draw numbers (0-9) using a touch screen or mouse on the GUI, and th
 
 ### Requirements
 - Setup
-- Requirements
 - Java Development Kit (JDK)
 - Python
 - TensorFlow
@@ -19,9 +18,10 @@ The user can draw numbers (0-9) using a touch screen or mouse on the GUI, and th
 ### Installation
 - Clone this repository.
 - Install the required dependencies listed above.
-- Make sure the TensorFlow model file (number_recognizer_model2.py) is in the correct directory.
-- Set up the absolute path of the file "number_recognizer_model2.py" after cloning in line 138 of "Event_handler_canvas.java" file
-- Make sure the trained model "handwritten_digit_model2.h5" is in the same working directory.
+- Make sure the TensorFlow model file (number_recognizer_model2.py) is in the correct directory [Should be under same Final Project Directtory].
+- Set up the absolute path of the file "number_recognizer_model2.py" [Copy the absolute path of the file "number_recognizer_model2.py"] after cloning in line 140 of "Event_handler_canvas.java" file
+- Make sure the trained model "handwritten_digit_model2.h5" is in the same working directory[Should be under same Final Project Directtory].
+- Set up the absolute path of the file "handwritten_digit_model2.h5" [Copy the absolute path of the file "handwritten_digit_model2.h5"] after cloning in line 73 of "number_recognizer_model2.py" file
 - Build and run the JavaFX application(GUI_Number_Recognizer.java).
 
 ### Files
@@ -97,42 +97,26 @@ If you wish to train the TensorFlow model with different data:
 ![number1](img8.png)
 ![number1](img9.png)
 
-### Installation and Configuration set up to run this JavaFx Application
+## Citation
 
-To run this project, you need to configure JavaFX in IntelliJ IDEA. Follow these steps:
+- Geron,A.(2017). Hands-On Machine Learning with Scikit-Learn & TensorFlow(1st Ed.).O'REILLY
 
-1. **Launch IntelliJ IDEA and open your JavaFX project.**
+- JavaFX - Quick Guide. (n.d.). https://www.tutorialspoint.com/javafx/javafx_quick_guide.htm
 
-2. **Navigate to Run/Debug Configurations:**
-    - Click on the drop-down menu next to the green play button in the toolbar.
-    - Select "Edit Configurations..." from the list. This will open the Run/Debug Configurations window.
+- JavaFX - Layout BorderPane. (n.d.). https://www.tutorialspoint.com/javafx/layout_borderpane.htm
 
-3. **Add a New Configuration:**
-    - In the Run/Debug Configurations window, click on the "+" icon at the top left corner to add a new configuration.
-    - From the dropdown menu, select "Application".
+- JavaFX - Quick Guide. (n.d.-b). https://www.tutorialspoint.com/javafx/javafx_quick_guide.htm
 
-4. **Configure the New Run/Debug Configuration:**
-    - Give your new configuration a name, such as "JavaFX Application".
-    - Set the main class of your JavaFX application by clicking on the browse (...) button next to the "Main class" field and selecting the appropriate class that contains your main method(GUI_Number_Recognizer.java).
-    - Set the working directory if necessary.
+- BorderPane (JavaFX 8). (2015, February 10). https://docs.oracle.com/javase/8/javafx/api/javafx/scene/layout/BorderPane.html
 
-5. **Specify JavaFX VM Options:**
-    - To specify JavaFX VM options, you typically need to add the following VM options:
-      ```
-      --module-path /path/to/javafx-sdk/lib --add-modules javafx.controls,javafx.fxml
-      ```
-      Replace `/path/to/javafx-sdk/lib` with the actual path to the lib directory of your JavaFX SDK installation.
+- GeeksforGeeks. (2021, September 1). JavaFX BorderPane Class. GeeksforGeeks. https://www.geeksforgeeks.org/javafx-borderpane-class/
 
-6. **Apply and Save Configuration:**
-    - Click "Apply" to apply the changes.
-    - Click "OK" to close the Run/Debug Configurations window.
+- GeeksforGeeks. (2018, September 18). JavaFX Font Class. GeeksforGeeks. https://www.geeksforgeeks.org/javafx-font-class/
 
-7. **Run or Debug Your JavaFX Application:**
-    - Now, you can run or debug your JavaFX application using the newly created run/debug configuration.
-    - Click on the green play button in the toolbar and select the configuration you just created from the dropdown list.
-
-**After the installation and configuration of the JavaFX, You can run the Application GUI_Number_Recognizer.java**
-
+- JavaFX CSS Reference Guide. (n.d.). https://docs.oracle.com/javafx/2/api/javafx/scene/doc-files/cssref.html
+- Redhia, A. (2023, November 28). Handwritten Digit Recognition - Azka Redhia - Medium. Medium. https://medium.com/@azkardm/handwritten-digit-recognition-4dc904edb515
+- Wikipedia contributors. (2024, April 25). MNIST database. Wikipedia. https://en.wikipedia.org/wiki/MNIST_database
+- Redhia, A. (2023, November 28). Handwritten Digit Recognition - Azka Redhia - Medium. Medium. https://medium.com/@azkardm/handwritten-digit-recognition-4dc904edb515
 ## Credits
 - Author: Anvitha Hiriadka
-- Created on: 04/26/2024
+- Created on: 04/27/2024

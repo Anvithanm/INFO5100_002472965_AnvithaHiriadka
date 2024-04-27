@@ -1,4 +1,4 @@
-package com.FinalProject;
+package com.example.finalproject;
 
 import javafx.scene.input.MouseEvent;
 /**

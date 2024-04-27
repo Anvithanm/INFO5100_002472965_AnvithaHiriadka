@@ -1,7 +1,7 @@
 '''
 ========================================================================================================================
  * Author = Anvitha Hiriadka
- * Submitted on 04/26/2024
+ * Submitted on 04/27/2024
  * Handwritten Number Recognizer Model --> This file contains handwritten number recognizer using TensorFlow,
  leveraging convolutional neural networks (CNNs) to accurately classify digits from the MNIST dataset.
  * Achieved high accuracy in recognizing handwritten digits, demonstrating the effectiveness of deep learning
@@ -69,14 +69,14 @@ def recognize_digit(image_path):
     plt.show()
 
     # Load the saved model
-    loaded_model = tf.keras.models.load_model("handwritten_digit_model2.h5")
-
+    # Please change the path here to the absolute path of handwritten_digit_model2.h5 after cloning this Final Project repositary
+    loaded_model = tf.keras.models.load_model("/Users/anvithahiriadka/IdeaProjects/FinalProject/src/main/java/com/example/finalproject/handwritten_digit_model2.h5")
     predictions = loaded_model.predict(image_array)
     predicted_class = np.argmax(predictions)
     return predicted_class
 
 # Load the image
-image_path = "/Users/anvithahiriadka/IdeaProjects/HelloWorld/processed_image.png"
+image_path = "processed_image.png"
 # Perform prediction
 predicted_digit = recognize_digit(image_path)
 #Printing the predicted digit

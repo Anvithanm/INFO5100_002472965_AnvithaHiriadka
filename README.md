@@ -30,3 +30,7 @@ Final Project - Handwritten Number Recognizer<br>
 - Image_processing.java
 - number_recognizer_model2.py(Model script)
 - handwritten_digit_model2.h5(Trained model)
+
+## Credits
+- Author: Anvitha Hiriadka
+- Created on: 04/26/2024

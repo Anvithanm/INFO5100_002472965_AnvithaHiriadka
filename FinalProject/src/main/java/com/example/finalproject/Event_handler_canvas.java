@@ -1,4 +1,4 @@
-package com.FinalProject;
+package com.example.finalproject;
 /**
  * This Event_handler_canvas.java file contains various functions to handle the events happening the UI
  * The events handled include : MousePressed, MouseDragged, Predict button actions, clear button actions
@@ -7,6 +7,7 @@ package com.FinalProject;
  * predict_number method here runs the number_recognizer_model2.py model file, performs the prediction function
  and return the result
  * This result is then displayed in the output field  of the GUI.
+ * Please note that it take 5 seconds to predict the number, so a wait time for 5 seconds is added in the code
  * */
 // Importing necessary JavaFX libraries
 import javafx.scene.SnapshotParameters;
@@ -99,7 +100,7 @@ public class Event_handler_canvas implements Canvas_EventHandler{
     /**
      * This method contains action items for the Predict button
      * Takes the snapshot of the canvas, saves the processed image, triggers the predict_number method
-    */
+     */
     public String predict_key_action (){
         Image_processing processing_image = new Image_processing();
         Image captured_image = canvas.snapshot(new SnapshotParameters(), null);
@@ -135,8 +136,8 @@ public class Event_handler_canvas implements Canvas_EventHandler{
         try{
             // Full path to the Python interpreter and script
             String pythonInterpreter = "python";
-            String pythonScript = "/Users/anvithahiriadka/IdeaProjects/HelloWorld/src/com/FinalProject/number_recognizer_model2.py";
-
+            //Please change the path here to the absolute path of number_recognizer_model2.h5 after cloning this Final Project repositary
+            String pythonScript = "/Users/anvithahiriadka/IdeaProjects/FinalProject/src/main/java/com/example/finalproject/number_recognizer_model2.py";
             // Build process command
             ProcessBuilder processBuilder = new ProcessBuilder(pythonInterpreter, pythonScript);
             processBuilder.redirectErrorStream(true); // Redirect error stream to input stream

@@ -1,14 +1,14 @@
-package com.FinalProject;
+package com.example.finalproject;
 /**
-========================================================================================================================
+ ========================================================================================================================
  * Author = Anvitha Hiriadka
- * Submitted on 04/26/2024
+ * Submitted on 04/27/2024
  * Handwritten Number Recognizer Application --> This Application lets the user draw the number on panel/canvas between
  (0-9), recognizes and predicts the number drawn on the canvas using trained Tensor flow based number recognizer Model.
-========================================================================================================================
+ ========================================================================================================================
  * This GUI_Number_Recognizer.java file contains GUI Javafx code to allow user to draw numbers (0-9) using touch screen or mouse.
  * Event_handler_canvas.java is the class that contains functions to handle the events such strokes on the canvas by mouse
-and button actions
+ and button actions
  * The singleton design pattern is implemented by obtaining the singleton instance of Event_handler_canvas using the getInstance method.
  - a private static instance variable to the Event_handler_canvas class as part of singleton design pattern is created.
  - a private constructor to prevent external instantiation is created - as part of singleton design pattern
@@ -16,9 +16,9 @@ and button actions
  * Inheritance, encapsulation and interfaces concepts are used in this project in the following ways:
  * Inheritance concept is covered by the GUI_Number_Recognizer.java class which inherits Application class
  * The implementation of encapsulation is done in  Event_handler_canvas class
-by encapsulating the functionality for handling events on a canvas
-* Implemented CanvasEventHandler as interface to provide a unified interface for handling mouse and keyboard events
-*/
+ by encapsulating the functionality for handling events on a canvas
+ * Implemented CanvasEventHandler as interface to provide a unified interface for handling mouse and keyboard events
+ */
 // Importing necessary JavaFX libraries
 import javafx.application.Application;
 import javafx.geometry.Insets;
@@ -84,7 +84,7 @@ public class GUI_Number_Recognizer extends Application {
 
         //Setting action/event handling for clear button [to clear the canvas]
         clear_button.setOnAction(e -> {event_handler.clearCanvas();
-                                        output_field.setText("");});
+            output_field.setText("");});
 
         //Setting action/event handling for predict button
         predict_button.setOnAction(e -> output_field.setText("Predicted Result : " + event_handler.predict_key_action()));

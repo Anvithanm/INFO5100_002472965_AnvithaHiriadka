@@ -1,4 +1,5 @@
-package com.FinalProject;
+package com.example.finalproject;
+
 import javafx.embed.swing.SwingFXUtils;
 import javafx.scene.SnapshotParameters;
 import javafx.scene.image.Image;
