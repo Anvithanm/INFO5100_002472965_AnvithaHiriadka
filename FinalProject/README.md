@@ -48,6 +48,9 @@ The user can draw numbers (0-9) using a touch screen or mouse on the GUI, and th
 - Launch the application.
 - Draw a number on the canvas using the touch screen or mouse (anything between 0-9).
 - Click the "PREDICT" button to predict the drawn number.
+- <font color='red'>Please note that it take 5 seconds to predict the number, so a wait time for 5 seconds is added in the code.</font>
+- After 5 Seconds, the pre-processed image is displayed, view it and close it. 
+- Upon closing the predicted number displayed in the output field in GUI.
 - The predicted number will be displayed on the output field of GUI.
 ![Demo of Usage and functioning](Usage_demo.gif)
 
