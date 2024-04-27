@@ -18,6 +18,8 @@ package com.example.finalproject;
  * The implementation of encapsulation is done in  Event_handler_canvas class
  by encapsulating the functionality for handling events on a canvas
  * Implemented CanvasEventHandler as interface to provide a unified interface for handling mouse and keyboard events
+ * NOTE: Please ensure that the numbers are drawn accurately. The model achieves a high accuracy rate of 98.94% in predicting handwritten numbers.
+ However, in some cases, such as the digits 5 and 8, if they are not recognized initially, a retry with proper drawing may resolve the issue, as it succeeds 95% of the time."
  */
 // Importing necessary JavaFX libraries
 import javafx.application.Application;

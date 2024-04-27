@@ -1,7 +1,8 @@
 # Handwritten Number Recognizer
 This project is a handwritten number recognizer implemented in Java using JavaFX for the GUI and TensorFlow based model for number recognition.<br>
 The user can draw numbers (0-9) using a touch screen or mouse on the GUI, and the program will predict the drawn number using a pre-trained TensorFlow model.
-
+NOTE: Please ensure that the numbers are drawn accurately. The model achieves a high accuracy rate of 98.94% in predicting handwritten numbers.<br>
+However, in some cases, such as the digits 5 and 8, if they are not recognized initially, a retry with proper drawing may resolve the issue, as it succeeds 95% of the time."
 ## Setup
 ### Dependencies
 - This project requires Java 8 and JavaFX for GUI. <br>
@@ -22,10 +23,13 @@ The user can draw numbers (0-9) using a touch screen or mouse on the GUI, and th
 - Set up the absolute path of the file "number_recognizer_model2.py" [Copy the absolute path of the file "number_recognizer_model2.py"] after cloning in line 140 of "Event_handler_canvas.java" file
 - Make sure the trained model "handwritten_digit_model2.h5" is in the same working directory[Should be under same Final Project Directtory].
 - Set up the absolute path of the file "handwritten_digit_model2.h5" [Copy the absolute path of the file "handwritten_digit_model2.h5"] after cloning in line 73 of "number_recognizer_model2.py" file
+- Launch the application by navigating to this path /FinalProject/src/main/java/com/example/finalproject/GUI_Number_Recognizer.java
 - Build and run the JavaFX application(GUI_Number_Recognizer.java).
+#### Please note that it take 5 seconds to predict the number, so a wait time for 5 seconds is added in the code.
+#### After 5 seconds a Pr-processed image appears, close it and the predicted number gets displayed in the Output field of GUI.
 
 ### Files
-- GUI_Number_Recognizer.java
+- GUI_Number_Recognizer.java [Locate this file in this path : /FinalProject/src/main/java/com/example/finalproject/GUI_Number_Recognizer.java]
   - Purpose: Entry point of the JavaFX application. 
   - Contents: Contains the main method to launch the application.
 - Event_handler_canvas.java
@@ -45,13 +49,16 @@ The user can draw numbers (0-9) using a touch screen or mouse on the GUI, and th
 ### Class Diagram (UML Diagram)
 ![Class Diagram](Class_Diagram.png)
 ### Usage
-- Launch the application.
+- Launch the application by navigating to this path /FinalProject/src/main/java/com/example/finalproject/GUI_Number_Recognizer.java
+- Run the GUI_Number_Recognizer.java JavaFX script to launch the application
 - Draw a number on the canvas using the touch screen or mouse (anything between 0-9).
 - Click the "PREDICT" button to predict the drawn number.
 - <font color='red'>Please note that it take 5 seconds to predict the number, so a wait time for 5 seconds is added in the code.</font>
 - After 5 Seconds, the pre-processed image is displayed, view it and close it. 
 - Upon closing the predicted number displayed in the output field in GUI.
 - The predicted number will be displayed on the output field of GUI.
+- NOTE: Please ensure that the numbers are drawn accurately. The model achieves a high accuracy rate of 98.94% in predicting handwritten numbers.<br> 
+However, in some cases, such as the digits 5 and 8, if they are not recognized initially, a retry with proper drawing may resolve the issue, as it succeeds 95% of the time."
 ![Demo of Usage and functioning](Usage_demo.gif)
 
 
@@ -117,6 +124,10 @@ If you wish to train the TensorFlow model with different data:
 - Redhia, A. (2023, November 28). Handwritten Digit Recognition - Azka Redhia - Medium. Medium. https://medium.com/@azkardm/handwritten-digit-recognition-4dc904edb515
 - Wikipedia contributors. (2024, April 25). MNIST database. Wikipedia. https://en.wikipedia.org/wiki/MNIST_database
 - Redhia, A. (2023, November 28). Handwritten Digit Recognition - Azka Redhia - Medium. Medium. https://medium.com/@azkardm/handwritten-digit-recognition-4dc904edb515
+
+## Project Report
+Please find the report in this path : /FinalProject/src/main/java/com/example/finalproject/Handwritten Number Recognition.pdf
+
 ## Credits
 - Author: Anvitha Hiriadka
 - Created on: 04/27/2024
